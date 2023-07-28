@@ -1,6 +1,5 @@
 /*
 Cameron Candau
-camcandau@gmail.com
 main.cpp
 CS21, Data Structures and Algorithms Assignment 3: "Quicksort"
 

@@ -1,7 +1,5 @@
 /*
 Cameron Candau
-ccandau
-camcandau@gmail.com
 hashTable.cpp
 Assignment #5 "Hash Table"
 */

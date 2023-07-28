@@ -1,6 +1,5 @@
 /*
 Cameron Candau
-camcandau@gmail.com
 main.cpp
 Assignment 4: "Radix/Bucket Sort Hybrid"
 
