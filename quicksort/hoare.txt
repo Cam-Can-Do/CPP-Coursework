@@ -1,0 +1,16 @@
+Hoare Tests and Constant (Analysis):
+My tests for the Hoare quicksort were the same as described in readme.txt for
+the Lomuto version, except I found that a constant value around 10 worked better.
+This constant value allowed for sorting 100 million ascending values in about
+1m39.286s, compared to 1m44.795s from using a constant of 2 with Hoare’s method.
+I also ran many tests multiple times each to make sure I was getting an accurate
+representation of its average performance.
+As in testing my Lomuto quicksort, I used datasets of various lengths (n = 10, 100…
+10 million, 100 million) and configurations (random, ascending, and descending
+orders). I found that the Hoare method was always faster than Lomuto (for all
+three configurations of data) because of the smaller coefficient (in time
+complexity) from making fewer swaps. 
+For instance, when sorting 1 million unsorted elements, Hoare took about 1.309s
+while Lomuto took about 1.405s. When sorting 1 million descending elements,
+Hoare took about 1.051s while Lomuto took about 1.661s.
+

@@ -1,0 +1,21 @@
+Lomuto Tests and Constant: 
+First I established that my quicksort’s performance scaled as expected with
+various configurations of data (random, ascending, and descending orders) by
+using text files with various sizes of data (n = 10, 100… 10 million, 100 million)
+as input to my program, and keeping a record of all my run times in a spreadsheet. 
+Test files are stored in "p3_tests" directory on my pengo home directory.
+
+Next I ran similar tests on both sorted and unsorted data with either using median
+of 3 (mo3) for all values, or none of them. Performance for mo3 on random values 
+was very similar to not using mo3 at all, but mo3 did make a significant difference
+compared to non-mo3 for sorted values (mo3 on 1k sorted values - 0.002s, non-mo3 on
+500 sorted values - 0.015s). 
+I moved to testing various constants on ascending data (since optimizing performance
+with pre-sorted data is one of the reasons we use mo3), and found that smaller constants
+almost always gave better performance, and I ultimately settled with a value of 2.
+At 100 million ascending elements, a constant of 2 gave multiple run times of about
+2m3.595s. I tested many similar constants, but 2 seemed to give the best average
+performance across various data configurations. Constants of 0 and 5 both gave run
+times of about 2m7.774 seconds for sorting 100 million ascending values, a few
+seconds slower than when I used 2 as a constant.
+
